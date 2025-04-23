@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhesh Teli - Resume</title>
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            animation: fadeInUp 1s ease-in-out 0.3s;
+            animation-fill-mode: backwards;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2a5298;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #2a5298;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .skills-grid, .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item, .project-item {
+            background: #f4f4f9;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover, .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item a {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-links a {
+            color: #2a5298;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-links a:hover {
+            color: #1e3c72;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .skills-grid, .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 data-aos="fade-down">Siddhesh Teli</h1>
+        <p data-aos="fade-up">Mumbai, Maharashtra, India</p>
+        <p data-aos="fade-up" data-aos-delay="100">+91 8850744076 | siddheshtek2203@gmail.com | <a href="https://linkedin.com/in/siddhesh-tel" class="contact-links">LinkedIn</a></p>
+        <p data-aos="fade-up" data-aos-delay="200">"Crafting innovative solutions and designing circuits to power tomorrow's technology."</p>
+    </header>
+
+    <div class="container">
+        <section id="summary" data-aos="fade-up">
+            <h2>Summary</h2>
+            <p>Enthusiastic and detail-oriented Electronics Engineering student with a strong foundation in electronics and telecommunications, gained through a diploma and ongoing degree studies. Experienced in participating in sports and events, showcasing teamwork and leadership skills. Passionate about leveraging technical knowledge to innovate and contribute effectively in academic and professional settings.</p>
+        </section>
+
+        <section id="skills" data-aos="fade-up">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Programming</h3>
+                    <p>Python (Basic knowledge)</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Tools</h3>
+                    <p>MATLAB, AutoCAD</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Electronics</h3>
+                    <p>Circuit Design, PCB Building</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Soft Skills</h3>
+                    <p>Communication, Teamwork, Problem-Solving, Adaptability</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" data-aos="fade-up">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Sep 2024: Introduction to IoT, Simplilearn SkillUp (Online)</li>
+                <li>Mar 2024: SQL and Relational Databases 101, Cognitive Class (IBM) (Online)</li>
+            </ul>
+        </section>
+
+        <section id="projects" data-aos="fade-up">
+            <h2>Technical Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>Home Automation Using IoT</h3>
+                    <p>2024 | Personal Project</p>
+                    <p>Developed a smart home automation system using NodeMCU and Arduino IDE to control devices.</p>
+                    <a href="#">Live Demo</a>
+                </div>
+                <div class="project-item">
+                    <h3>Smart Agriculture Farming Using NodeMCU</h3>
+                    <p>2024 | Personal Project</p>
+                    <p>Built an IoT-based system to monitor soil moisture, temperature, and motion using NodeMCU and sensors.</p>
+                    <a href="#">Live Demo</a>
+                </div>
+                <div class="project-item">
+                    <h3>WiFi Jammer Using NodeMCU</h3>
+                    <p>2024 | Personal Project</p>
+                    <p>Created a WiFi jammer to study wireless network security using NodeMCU and ESP8266 deauther software.</p>
+                    <a href="#">Live Demo</a>
+                </div>
+                <div class="project-item">
+                    <h3>Smart Vending Machine Using 8051 Microprocessor</h3>
+                    <p>2024 | Final Year Project</p>
+                    <p>Developed a vending machine with an LCD display and bipolar stepper motor using the 8051 microprocessor.</p>
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" data-aos="fade-up">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Vidyalankar Institute of Technology</strong><br>Bachelor of Engineering in Electronics Engineering (Ongoing, 2024)<br>Skills: Circuit Design, PCB Building, Python</li>
+                <li><strong>Vidyalankar Polytechnic</strong><br>Diploma in Electronics and Telecommunications Engineering (2024)<br>Focus: Electronic Systems, Microprocessors, IoT</li>
+                <li><strong>GMES High School</strong><br>Secondary School Certificate (SSC)<br>Active in sports and co-curricular events, received medals</li>
+            </ul>
+        </section>
+
+        <section id="extracurricular" data-aos="fade-up">
+            <h2>Extracurricular Activities</h2>
+            <ul>
+                <li><strong>Creative Enthusiast</strong>: Crafting and sketching, enhancing attention to detail.</li>
+                <li><strong>Event Coordinator</strong>: Managed crowds during events for smooth coordination.</li>
+                <li><strong>Sports</strong>: Played cricket, carrom, and badminton, showcasing teamwork.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- AOS Library Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
